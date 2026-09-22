@@ -4,7 +4,7 @@ import requests
 # 1. Configuration
 TARGET_URL = "https://css.jne.co.id/"
 COOKIE_NAME = "ci_session" 
-COOKIE_VALUE = "1c5p8d2ktchjm8hrj78biiddjirqnjo9" 
+COOKIE_VALUE = "PASTE_HERE" 
 
 COOKIES = {COOKIE_NAME: COOKIE_VALUE}
 HEADERS = {

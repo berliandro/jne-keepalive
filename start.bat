@@ -2,11 +2,12 @@
 title JNE CSS Keep-Alive Launcher
 
 echo Checking and installing required Python packages...
-pip install -r requirements.txt
+pip install -q -r requirements.txt
 
 echo.
-echo Launching application...
-python jne_keepalive.py
+echo Launching application in secure window...
 
-:: If the app closes or crashes, this pause keeps the terminal open so you can read any errors.
-pause
+:: Point conhost to the new v3.2 filename
+start "JNE Keep-Alive" conhost.exe python jne_keepalive-v3.2.py
+
+exit
